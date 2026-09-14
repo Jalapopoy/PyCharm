@@ -55,24 +55,26 @@ def index():
         else:
             strRDescJEM = "Unavailable Room"
 
-        strOutput = "<h3>HOSPITAL BILL</h3>" \
-                    "Patient Number: " + str(strIDJEM) + "<br>" \
-                    "Patient Name: " + str(strNameJEM) + "<br>" \
-                    "Age: " + str(dblAgeJEM) + "<br>" \
-                    "Age Group: " + str(strAGroupJEM) + "<br>" \
-                    "Room Type: " + str(strRTypeJEM) + "<br>" \
-                    "Room Description: " + str(strRDescJEM) + "<br>" \
-                    "Rate Per Day: " + str(dblRPDayJEM) + "<br>" \
-                    "No. Of Days: " + str(dblNDaysJEM) + "<br>" \
-                    "Laboratory Charges: " + str(dblLChargesJEM) + "<br>" \
-                    "Extra Charges: " + str(dblEChargesJEM) + "<br>" \
-                    "Room Charge: " + str(dblRChargesJEM) + "<br>" \
-                    "Total Amount: " + str(dblTAmountJEM) + "<br>" \
-                    "Health Insurance: " + str(dblHInsuranceJEM) + "<br>" \
-                    "PhilHealth: " + str(dblPHealthJEM) + "<br>" \
-                    "SSS: " + str(dblSSSJEM) + "<br>" \
-                    "Total Discount: " + str(dblTDiscountJEM) + "<br>" \
-                    "Amount to Pay: " + str(dblAPayJEM) + "<br>"
+        strOutput = (
+            f"<h3>HOSPITAL BILL</h3>"
+            f"Patient Number: {strIDJEM}<br>"
+            f"Patient Name: {strNameJEM}<br>"
+            f"Age: {dblAgeJEM}<br>"
+            f"Age Group: {strAGroupJEM}<br>"
+            f"Room Type: {strRTypeJEM}<br>"
+            f"Room Description: {strRDescJEM}<br>"
+            f"Rate Per Day: {dblRPDayJEM}<br>"
+            f"No. Of Days: {dblNDaysJEM}<br>"
+            f"Laboratory Charges: {dblLChargesJEM}<br>"
+            f"Extra Charges: {dblEChargesJEM}<br>"
+            f"Room Charge: {dblRChargesJEM}<br>"
+            f"Total Amount: {dblTAmountJEM}<br>"
+            f"Health Insurance: {dblHInsuranceJEM}<br>"
+            f"PhilHealth: {dblPHealthJEM}<br>"
+            f"SSS: {dblSSSJEM}<br>"
+            f"Total Discount: {dblTDiscountJEM}<br>"
+            f"Amount to Pay: {dblAPayJEM}<br>"
+        )
 
         return strOutput
 

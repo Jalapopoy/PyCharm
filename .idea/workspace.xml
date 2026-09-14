@@ -7,6 +7,7 @@
     <list default="true" id="06330e00-2483-4677-a9c7-c040473b98c7" name="Changes" comment="Made some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mp1-mod3-sia101-jem.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp1-mod3-sia101-jem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mp1-mod3-sia101-jem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mp1-mod3-sia101-jem.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789370279424</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made some changes">
+      <option name="closed" value="true" />
+      <created>1789371555948</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1789371555948</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
