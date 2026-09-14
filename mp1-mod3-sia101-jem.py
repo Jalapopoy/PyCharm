@@ -9,7 +9,7 @@ def index():
         strIDJEM = request.form["Patient_ID"]
         strNameJEM = request.form["Patient_Name"]
         dblAgeJEM = float(request.form["Age"])
-        dblRTypeJEM = request.form["Room_Type"]
+        strRTypeJEM = request.form["Room_Type"]
         dblRPDayJEM = float(request.form["Rate_Per_Day"])
         dblNDaysJEM = float(request.form["No_Of_Days"])
         dblLChargesJEM = float(request.form["Laboratory_Charges"])
@@ -36,22 +36,43 @@ def index():
         else:
             strAGroupJEM = "Old Adults"
 
+        if strRTypeJEM == "W":
+            strRDescJEM = "Ward"
+        elif strRTypeJEM == "SPR":
+            strRDescJEM = "Semi Private Room"
+        elif strRTypeJEM == "PR":
+            strRDescJEM = "Private Room"
+        elif strRTypeJEM == "ER":
+            strRDescJEM = "Encubator Room"
+        elif strRTypeJEM == "ICU":
+            strRDescJEM = "Intensive Care Unit"
+        elif strRTypeJEM == "NICU":
+            strRDescJEM = "Neonatal Intensive Care Unit"
+        elif strRTypeJEM == "PICU":
+            strRDescJEM = "Pediatric Intensive Care Unit"
+        elif strRTypeJEM == "IC":
+            strRDescJEM = "Incubator Cost"
+        else:
+            strRDescJEM = "Unavailable Room"
+
         strOutput = "<h3>HOSPITAL BILL</h3>" \
-                    "Patient Number: " + strIDJEM + "<br>" \
-                    "Patient Name: " + strNameJEM + "<br>" \
-                    "Age: " + dblAgeJEM + "<br>" \
-                    "Age Group: " + strAGroupJEM + "<br>" \
-                    "Room Type: " + dblRTypeJEM + "<br>" \
-                    "Rate Per Day: " + dblRPDayJEM + "<br>" \
-                    "No. Of Days: " + dblNDaysJEM + "<br>" \
-                    "Laboratory Charges: " + dblLChargesJEM + "<br>" \
-                    "Extra Charges: " + dblEChargesJEM + "<br>" \
-                    "Room Charge: " + dblRChargesJEM + "<br>" \
-                    "Total Amount: " + dblTAmountJEM + "<br>" \
-                    "Health Insurance: " + dblHInsuranceJEM + "<br>" \
-                    "PhilHealth: " + dblPHealthJEM + "<br>" \
-                    "SSS: " + dblSSSJEM + "<br>" \
-                    "<br>"
+                    "Patient Number: " + str(strIDJEM) + "<br>" \
+                    "Patient Name: " + str(strNameJEM) + "<br>" \
+                    "Age: " + str(dblAgeJEM) + "<br>" \
+                    "Age Group: " + str(strAGroupJEM) + "<br>" \
+                    "Room Type: " + str(strRTypeJEM) + "<br>" \
+                    "Room Description: " + str(strRDescJEM) + "<br>" \
+                    "Rate Per Day: " + str(dblRPDayJEM) + "<br>" \
+                    "No. Of Days: " + str(dblNDaysJEM) + "<br>" \
+                    "Laboratory Charges: " + str(dblLChargesJEM) + "<br>" \
+                    "Extra Charges: " + str(dblEChargesJEM) + "<br>" \
+                    "Room Charge: " + str(dblRChargesJEM) + "<br>" \
+                    "Total Amount: " + str(dblTAmountJEM) + "<br>" \
+                    "Health Insurance: " + str(dblHInsuranceJEM) + "<br>" \
+                    "PhilHealth: " + str(dblPHealthJEM) + "<br>" \
+                    "SSS: " + str(dblSSSJEM) + "<br>" \
+                    "Total Discount: " + str(dblTDiscountJEM) + "<br>" \
+                    "Amount to Pay: " + str(dblAPayJEM) + "<br>"
 
         return strOutput
 
