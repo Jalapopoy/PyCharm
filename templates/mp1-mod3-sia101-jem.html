@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PYTHON GRADING SYSTEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <form action="#" method="POST" name="frmGrading" id="frmGrading">
+            <!-- USER INPUT ELEMENTS -->
+             <div class="form-group">
+                <label for="Patient_ID">Patient ID:</label>
+                <input type="text" class="form-control"  name="Patient_ID" id="Patient_ID" placeholder="Enter Patient ID" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Patient_Name">Patient Name:</label>
+                <input type="text" class="form-control"  name="Patient_Name" id="Patient_Name" placeholder="Enter Patient Name" required>
+            </div>
+             <br>
+             <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="number" step="any" class="form-control"  name="Age" id="Age" placeholder="Enter Age" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Room_Type">Room Type:</label>
+                <input type="text" step="any" class="form-control"  name="Room_Type" id="Room_Type" placeholder="Enter Room Type" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Rate_Per_Day">Rate Per Day:</label>
+                <input type="number" step="any" class="form-control"  name="Rate_Per_Day" id="Rate_Per_Day" placeholder="Enter Rate Per Day" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="No_Of_Days">No. Of Days:</label>
+                <input type="number" step="any" class="form-control"  name="No_Of_Days" id="No_Of_Days" placeholder="Enter Rate Per Day" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Laboratory_Charges">Laboratory Charges:</label>
+                <input type="number" step="any" class="form-control"  name="Laboratory_Charges" id="Laboratory_Charges" placeholder="Enter Rate Per Day" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Extra_Charges">Extra Charges:</label>
+                <input type="number" step="any" class="form-control"  name="Extra_Charges" id="Extra_Charges" placeholder="Enter Rate Per Day" required>
+            </div>
+            <!--ACTION/COMMAND BUTTONS-->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnSubmit">COMPUTE BILL</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
