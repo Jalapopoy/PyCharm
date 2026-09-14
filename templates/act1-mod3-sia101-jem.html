@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PYTHON WEB ELEMENTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="card-body">
+        <form action="#" method="POST" name="frmElements" id="frmElements">
+            <h2>STUDENT INFORMATION</h2>
+            <br>
+
+            <!-- TEXT, DATE, TEXTAREA AND EMAIL -->
+            <div class="form-group">
+                <label for="StudentName">Student Name:</label>
+                <input type="text" class="form-control"  name="StudentName" id="StudentName" placeholder="Enter student name" required>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="Birthdate">Date of Birth:</label>
+                <input type="date" class="form-control" name="Birthdate" id="Birthdate" placeholder="" required>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="Address">Home Address:</label>
+                <textarea class="form-control" name="Address" id="Address" placeholder="Enter home address" required></textarea>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="EmailAdd">Email Address:</label>
+                <input type="email" class="form-control"  name="EmailAdd" id="EmailAdd" placeholder="Enter email address" required>
+            </div>
+            <!-- SELECT OR DROPDWOWN -->
+            <br>
+            <div class="form-group">
+                <label for="gender">Select Gender:</label>
+                <select class="form-control form-select" id="gender" name="gender" required>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+            </div>
+            <!-- RADIOBUTTONS -->
+            <br>
+            <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Course:</legend>
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="Course" id="BSIS" value="BSIS" checked>
+                      <label class="form-check-label" for="BSIS">BS Information Systems</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="Course" id="BSIT" value="BSIT">
+                      <label class="form-check-label" for="BSIT">BS Information Technology</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="Course" id="BSCS" value="BSCS">
+                      <label class="form-check-label" for="BSCS">BS Computer Science</label>
+                    </div>
+                 </fieldset>
+            </div>
+
+                 <br>
+             <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Year Level:</legend>
+                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="YearLevel" id="First" value="1st Year" checked>
+                      <label class="form-check-label" for="First">First</label>
+                    </div>
+
+                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="YearLevel" id="Second" value="2nd Year">
+                      <label class="form-check-label" for="Second">Second</label>
+                    </div>
+
+                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="YearLevel" id="Third" value="3rd Year">
+                      <label class="form-check-label" for="Third">Third</label>
+                    </div>
+
+                      <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="YearLevel" id="Fourth" value="4th Year">
+                      <label class="form-check-label" for="Fourth">Fourth</label>
+                    </div>
+             </fieldset>
+            </div>
+            <!-- CHECKBOXES -->
+            <br>
+            <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Items to order:</legend>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="PE Uniform" name="PEUni" id="PEUni" checked>
+                      <label class="form-check-label" for="PEUni">PE Uniform</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Department Shirt" name="DeptShirt" id="DeptShirt">
+                      <label class="form-check-label" for="DeptShirt">Department Shirt</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Badge and Lanyards" name="BadLan" id="BadLan">
+                      <label class="form-check-label" for="BadLan">Badge and Lanyards</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="School Uniform" name="SchUni" id="SchUni">
+                      <label class="form-check-label" for="SchUni">School Uniform</label>
+                    </div>
+                 </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Select subscription:</legend>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="Books" name="Book" id="Book" checked>
+                      <label class="form-check-label" for="Book">Books</label>
+                    </div>
+
+                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="PDFs" name="PDF" id="PDF">
+                      <label class="form-check-label" for="PDF">PDFs</label>
+                    </div>
+
+                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="Documents" name="Docs" id="Docs">
+                      <label class="form-check-label" for="Docs">Documents</label>
+                    </div>
+                 </fieldset>
+            </div>
+            <!-- ACTION OR COMMAND BUTTONS -->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnSubmit">COMPUTE TUTION FEE</button>
+            </div>
+            <br>
+            <div class="form-control btn-group" role="group">
+              <button type="button" class="btn btn-secondary" id="btnAdd">Add</button>
+              <button type="button" class="btn btn-secondary" id="btnSearch">Search</button>
+              <button type="button" class="btn btn-secondary" id="btnEdit">Edit</button>
+              <button type="button" class="btn btn-secondary" id="btnDelete">Delete</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
