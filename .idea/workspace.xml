@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="06330e00-2483-4677-a9c7-c040473b98c7" name="Changes" comment="Made some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp1-mod3-sia101-jem.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp1-mod3-sia101-jem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mp1-mod3-sia101-jem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mp1-mod3-sia101-jem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp2-mod3-sia101-jem.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp2-mod3-sia101-jem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mp2-mod3-sia101-jem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mp2-mod3-sia101-jem.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +56,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.act1-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
-    &quot;Python.act2-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
-    &quot;Python.act3-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mp1-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.act1-mod3-sia101-jem.executor": "Run",
+    "Python.act2-mod3-sia101-jem.executor": "Run",
+    "Python.act3-mod3-sia101-jem.executor": "Run",
+    "Python.mp1-mod3-sia101-jem.executor": "Run",
+    "Python.mp2-mod3-sia101-jem.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SIA101-BSIT3-JUSTICE-JEM\module3-files" />
@@ -148,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1789371555948</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made some changes">
+      <option name="closed" value="true" />
+      <created>1789373765894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373765894</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Made some changes">
+      <option name="closed" value="true" />
+      <created>1789373779198</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1789373779198</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

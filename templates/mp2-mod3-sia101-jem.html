@@ -14,33 +14,72 @@
 
             <!-- TEXT INPUT ELEMENTS -->
             <div class="form-group">
-                <label for="CustomerID">Customer ID:</label>
-                <input type="text" class="form-control"  name="CustomerID" id="CustomerID" placeholder="Enter customer id" required>
+                <label for="StudentID">Student ID:</label>
+                <input type="text" class="form-control"  name="StudentID" id="StudentID" placeholder="Enter Student ID" required>
             </div>
 
              <br>
              <div class="form-group">
-                <label for="CustomerName">Customer Name:</label>
-                <input type="text" class="form-control"  name="CustomerName" id="CustomerName" placeholder="Enter customer name" required>
+                <label for="LastName">Last Name:</label>
+                <input type="text" class="form-control"  name="LastName" id="LastName" placeholder="Enter Last Name" required>
             </div>
-            <!-- RADIOBUTTONS FOR ORDERS-->
+            <br>
+             <div class="form-group">
+                <label for="FirstName">First Name:</label>
+                <input type="text" class="form-control"  name="FirstName" id="FirstName" placeholder="Enter First Name" required>
+            </div>
+            <br>
+             <div class="form-group">
+                <label for="MiddleName">Middle Name:</label>
+                <input type="text" class="form-control"  name="MiddleName" id="MiddleName" placeholder="Enter Middle Name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Gender">Select Gender:</label>
+                <select class="form-control form-select" id="Gender" name="Gender" required>
+                    <option>SELECT ONE</option>
+                    <option>MALE</option>
+                    <option>FEMALE</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" class="form-control"  name="Email" id="Email" placeholder="Enter Email" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Course">Select Course:</label>
+                <select class="form-control form-select" id="Course" name="Course" required>
+                    <option>SELECT ONE</option>
+                    <option>BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</option>
+                    <option>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</option>
+                    <option>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</option>
+                </select>
+            </div>
+            <!-- RADIOBUTTONS FOR TUITION FEES-->
             <br>
             <div class="form-group">
                  <fieldset class="form-group">
-                    <legend>Select Order:</legend>
+                    <legend>Select Year:</legend>
                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="order" id="hambor" value="Hamburger" checked>
-                      <label class="form-check-label" for="hambor">Hamburger 50.00</label>
+                      <input class="form-check-input" type="radio" name="tuition" id="FirstYear" value="1st Year 500.00" checked>
+                      <label class="form-check-label" for="tuition">1st Year 500.00</label>
                     </div>
 
                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="order" id="cheese" value="Cheese Burger">
-                      <label class="form-check-label" for="cheese">Cheese Burger 100.00</label>
+                      <input class="form-check-input" type="radio" name="tuition" id="SecondYear" value="2nd Year 600.00">
+                      <label class="form-check-label" for="tuition">2nd Year 600.00</label>
                     </div>
 
                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="order" id="bigmc" value="Big MacJabee">
-                      <label class="form-check-label" for="bigmc">Big MacJabee 150.00</label>
+                      <input class="form-check-input" type="radio" name="tuition" id="ThirdYear" value="3rd Year 800.00">
+                      <label class="form-check-label" for="tuition">3rd Year 800.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="tuition" id="FourthYear" value="4th Year 900.00">
+                      <label class="form-check-label" for="tuition">4th Year 900.00</label>
                     </div>
                  </fieldset>
             </div>
@@ -50,30 +89,36 @@
                  <fieldset class="form-group">
                     <legend>Select Extras:</legend>
                      <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="patty" id="patty" value="Patties 25.00" checked>
-                      <label class="form-check-label" for="hambor">Patties 25.00</label>
+                      <input class="form-check-input" type="checkbox" name="rfee" id="rfee" value="Registration Fee 100.00" checked>
+                      <label class="form-check-label" for="rfee">Registration Fee 100.00</label>
                     </div>
 
                      <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="coles" id="coles" value="Coleslaw 50.00">
-                      <label class="form-check-label" for="cheese">Coleslaw 50.00</label>
+                      <input class="form-check-input" type="checkbox" name="ifee" id="ifee" value="Internet Fee 100.00">
+                      <label class="form-check-label" for="ifee">Internet Fee 100.00</label>
                     </div>
 
                      <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="hamegg" id="hamegg" value="Ham and Egg 100.00">
-                      <label class="form-check-label" for="hamegg">Ham and Egg 100.00</label>
+                      <input class="form-check-input" type="checkbox" name="idfee" id="idfee" value="ID Fee 100.00">
+                      <label class="form-check-label" for="idfee">ID Fee 100.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="lfee" id="lfee" value="Library Fee 50.00">
+                      <label class="form-check-label" for="lfee">Library Fee 50.00</label>
                     </div>
                  </fieldset>
             </div>
-            <!-- SELECT OR DROPDWOWN FOR DRINKS -->
+            <!-- SELECT OR DROPDWOWN FOR SCHOLARSHIP -->
             <br>
             <div class="form-group">
-                <label for="drinks">Select Drinks:</label>
-                <select class="form-control form-select" id="drinks" name="drinks" required>
-                  <option>SELECT ONE</option>
-                  <option>SOFTDRINKS 30.00</option>
-                  <option>COFFEE 40.00</option>
-                  <option>MANGO JUICE 50.00</option>
+                <label for="scholarship">Select Scholarship:</label>
+                <select class="form-control form-select" id="scholarship" name="scholarship" required>
+                    <option>SELECT ONE</option>
+                    <option>DEAN'S LISTER 200.00</option>
+                    <option>STUDENT ASSISTANT 500.00</option>
+                    <option>PRESIDENT LIST 700.00</option>
+                    <option>FULL SCHOLARSHIP 1000.00</option>
                 </select>
             </div>
             <!--ACTION/COMMAND BUTTONS-->

@@ -6,53 +6,70 @@ app = Flask(__name__)
 def index():
     if request.method == "POST":
         # GET USER INPUT
-        strID = request.form["CustomerID"]
-        strName = request.form["CustomerName"]
+        strIDJEM = request.form["StudentID"]
+        strLNameJEM = request.form["LastName"]
+        strFNameJEM = request.form["FirstName"]
+        strMNameJEM = request.form["MiddleName"]
+        strGenderJEM = request.form["Gender"]
+        strEmailJEM = request.form["Email"]
+        strCourseJEM = request.form["Course"]
 
         # GET SELECT RADIOBUTTON
-        strOrder = request.form["order"]
-        if strOrder == "Hamburger":
-            orders = 50
-        elif strOrder == "Cheese Burger":
-            orders = 100
-        elif strOrder == "Big MacJabee":
-            orders = 150
+        strTuitionJEM = request.form["tuition"]
+        if strTuitionJEM == "1st Year 500.00":
+            tuition = 500
+        elif strTuitionJEM == "2nd Year 600.00":
+            tuition = 600
+        elif strTuitionJEM == "3rd Year 800.00":
+            tuition = 800
+        elif strTuitionJEM == "4th Year 900.00":
+            tuition = 900
 
         # GET SELECTED CHECKBOXES
-        if request.form.get("patty", False):
-            patty = 25
+        if request.form.get("rfee", False):
+            rfee = 100
         else:
-            patty = 0
+            rfee = 0
 
-        if request.form.get("coles", False):
-            coles = 50
+        if request.form.get("ifee", False):
+            ifee = 100
         else:
-            coles = 0
+            ifee = 0
 
-        if request.form.get("hamegg", False):
-            hamegg = 100
+        if request.form.get("idfee", False):
+            idfee = 100
         else:
-            hamegg = 0
+            idfee = 0
+
+        if request.form.get("lfee", False):
+            lfee = 50
+        else:
+            lfee = 0
 
         # GET SELECTED DRINKS
-        strDrinks = request.form["drinks"]
-        if strDrinks == "SOFTDRINKS 30.00":
-            drinks = 30
-        elif strDrinks == "COFFEE 40.00":
-            drinks = 40
-        elif strDrinks == "MANGO JUICE 50.00":
-            drinks = 50
+        strScholarship = request.form["scholarship"]
+        if strScholarship == "DEAN'S LISTER 200.00":
+            scholarship = 200
+        elif strScholarship == "STUDENT ASSISTANT 500.00":
+            scholarship = 500
+        elif strScholarship == "PRESIDENT LIST 700.00":
+            scholarship = 700
+        elif strScholarship == "FULL SCHOLARSHIP 1000.00":
+            scholarship = 1000
 
-        total = orders + patty + coles + hamegg + drinks
+        total = tuition + rfee + ifee + idfee + lfee - scholarship
 
         strOutput = "<h3>OFFICIAL RECEIPT</h3>"
-        strOutput += "Customer ID: " + strID + "<br>"
-        strOutput += "Customer Name: " + strName + "<br>"
+        strOutput += "Student ID: " + strIDJEM + "<br>"
+        strOutput += "Student Name: " + strLNameJEM + ", " + strFNameJEM + " " + strMNameJEM + "<br>"
+        strOutput += "Student Gender: " + strGenderJEM + "<br>"
+        strOutput += "Student Email: " + strEmailJEM + "<br>"
+        strOutput += "Student Course: " + strCourseJEM + "<br>"
         strOutput += "Total Amount: " + str(total) + "<br>"
 
         return strOutput
 
-    return render_template("act3-mod3-sia101-jem.html")
+    return render_template("mp2-mod3-sia101-jem.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
