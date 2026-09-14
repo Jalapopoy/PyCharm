@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PYTHON GRADING SYSTEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <form action="#" method="POST" name="frmGrading" id="frmGrading">
+            <!-- USER INPUT ELEMENTS -->
+             <div class="form-group">
+                <label for="Student_ID">Student Name:</label>
+                <input type="text" class="form-control"  name="Student_ID" id="Student_ID" placeholder="Enter student id" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Student_Name">Student Name:</label>
+                <input type="text" class="form-control"  name="Student_Name" id="Student_Name" placeholder="Enter student name" required>
+            </div>
+             <br>
+             <div class="form-group">
+                <label for="Prelim_Grade">Prelim Grade:</label>
+                <input type="number" step="any" class="form-control"  name="Prelim_Grade" id="Prelim_Grade" placeholder="Enter prelim grade" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Midterm_Grade">Midterm Grade:</label>
+                <input type="number" step="any" class="form-control"  name="Midterm_Grade" id="Midterm_Grade" placeholder="Enter midterm grade" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Final_Grade">Final Grade:</label>
+                <input type="number" step="any" class="form-control"  name="Final_Grade" id="Final_Grade" placeholder="Enter final grade" required>
+            </div>
+            <!--ACTION/COMMAND BUTTONS-->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnSubmit">COMPUTE GRADE</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

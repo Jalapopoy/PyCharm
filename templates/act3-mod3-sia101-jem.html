@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PYTHON ORDERING SYSTEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <form action="#" method="POST" name="frmOrder" id=" frmOrder ">
+        <h2>CUSTOMER ORDER FORM</h2>
+            <br>
+
+            <!-- TEXT INPUT ELEMENTS -->
+            <div class="form-group">
+                <label for="CustomerID">Customer ID:</label>
+                <input type="text" class="form-control"  name="CustomerID" id="CustomerID" placeholder="Enter customer id" required>
+            </div>
+
+             <br>
+             <div class="form-group">
+                <label for="CustomerName">Customer Name:</label>
+                <input type="text" class="form-control"  name="CustomerName" id="CustomerName" placeholder="Enter customer name" required>
+            </div>
+            <!-- RADIOBUTTONS FOR ORDERS-->
+            <br>
+            <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Order:</legend>
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="order" id="hambor" value="Hamburger" checked>
+                      <label class="form-check-label" for="hambor">Hamburger 50.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="order" id="cheese" value="Cheese Burger">
+                      <label class="form-check-label" for="cheese">Cheese Burger 100.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="order" id="bigmc" value="Big MacJabee">
+                      <label class="form-check-label" for="bigmc">Big MacJabee 150.00</label>
+                    </div>
+                 </fieldset>
+            </div>
+            <!-- CHECKOBOXES FOR EXTRAS-->
+            <br>
+            <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Extras:</legend>
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="patty" id="patty" value="Patties 25.00" checked>
+                      <label class="form-check-label" for="hambor">Patties 25.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="coles" id="coles" value="Coleslaw 50.00">
+                      <label class="form-check-label" for="cheese">Coleslaw 50.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="hamegg" id="hamegg" value="Ham and Egg 100.00">
+                      <label class="form-check-label" for="hamegg">Ham and Egg 100.00</label>
+                    </div>
+                 </fieldset>
+            </div>
+            <!-- SELECT OR DROPDWOWN FOR DRINKS -->
+            <br>
+            <div class="form-group">
+                <label for="drinks">Select Drinks:</label>
+                <select class="form-control form-select" id="drinks" name="drinks" required>
+                  <option>SELECT ONE</option>
+                  <option>SOFTDRINKS 30.00</option>
+                  <option>COFFEE 40.00</option>
+                  <option>MANGO JUICE 50.00</option>
+                </select>
+            </div>
+            <!--ACTION/COMMAND BUTTONS-->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnCompute">COMPUTE TOTAL AMOUNT</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+</html>
