@@ -5,6 +5,46 @@ from app import app
 from db_config import mysql
 from flask import flash, render_template, request, redirect
 
+@app.route('/home_page')
+def home_page():
+    return render_template('home.html')
+
+
+#User Log-In Page
+@app.route('/')
+def login_user_view():
+    return render_template('index.html')
+
+#Log-In User
+@app.route('/log_in_user', methods=['POST'])
+def log_in_user():
+    conn = None
+    cursor = None
+    try:
+        # GET USER INPUTS
+        strID = request.form['User_ID']
+        strPass = request.form['Password']
+
+        if request.method == 'POST':
+            conn = mysql.connect()
+            cursor = conn.cursor(pymysql.cursors.DictCursor)
+            sql = "SELECT * FROM tbl_user_info WHERE user_id=%s AND password=%s"
+            data = (strID, strPass)
+            cursor.execute(sql, data)
+            row = cursor.fetchone()
+            if row:
+                return redirect('/home_page')
+            else:
+                return redirect('/')
+        else:
+            return 'Error while adding user'
+    except Exception as e:
+        print(e)
+    finally:
+        cursor.close()
+        conn.close()
+
+
 #View Read-All Page
 @app.route('/read_all_user')
 def read_all_user():

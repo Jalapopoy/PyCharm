@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Log-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body class="bgHome">
+    <div class='container bgContainer'>
+    <div>
+    <form class='form-signin' id='log-user-form' name="frmLogIn" action='/log_in_user' method='POST'  border='0'>
+    <h3 class='form-signin-heading fontWhite'>USER LOG-IN</h3>
+    <br>
+    <label for='User_ID' nameclass='sr-only' class='fontWhite'>User ID</label>
+    <input type='text' name='User_ID' id='User_ID' class='form-control' placeholder='User ID'
+   required autofocus>
+    <br>
+    <label for='Password' nameclass='sr-only' class='fontWhite'>Password</label>
+    <input type='password' name='Password' id='Password' class='form-control'
+   placeholder='Password' required>
+    <br>
+    <button class='btn btn-lg btn-primary btn-block' type='submit'>Sign in</button>
+    <br>
+    <p align='justify' class='fontWhite'>Please login using your valid User ID and Password! In
+   case of problem, please consult our system administrator.<p/>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
