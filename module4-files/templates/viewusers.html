@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIEW USER RECORD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <h2>VIEW USER RECORD</h2>
+        <p><a href="{{ url_for('.read_all_user') }}"><button class="btn btn-secondary">Back to List</button></a></p>
+
+        <table id="data" class="table table-striped responsive">
+            <tr>
+                <td>User ID:</td>
+                <td>{{ row['User_ID'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td>{{ row['Last_Name'] }}</td>
+            </tr>
+
+            <tr>
+                <td>First Name:</td>
+                <td>{{ row['First_Name'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Middle Name:</td>
+                <td>{{ row['Middle_Name'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Home Address:</td>
+                <td>{{ row['Home_Address'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Email Address:</td>
+                <td>{{ row['Email_Address'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number:</td>
+                <td>{{ row['Mobile_Number'] }}</td>
+            </tr>
+
+            <tr>
+                <td>User Type:</td>
+                <td>{{ row['User_Type'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Status:</td>
+                <td>{{ row['Status'] }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

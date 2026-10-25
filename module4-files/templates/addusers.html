@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=" {{ url_for('static', filename='css/bootstrap.min.css') }} " rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <form action="/create_user" method="POST" name="frmUser" id="frmUser">
+            <h2>Add New User</h2>
+            <br>
+
+            <!--TEXT INPUT ELEMENTS-->
+            <div class="form-group">
+                <label for="UserID">User ID:</label>
+                <input type="text" class="form-control" name="UserID" id="UserID" placeholder="Enter user id" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="LastName">Last Name:</label>
+                <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Enter last name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="FirstName">First Name:</label>
+                <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="Enter first name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="MiddleName">Middle Name:</label>
+                <input type="text" class="form-control" name="MiddleName" id="MiddleName" placeholder="Enter middle name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Address">Home Address:</label>
+                <textarea class="form-control" name="Address" id="Address" placeholder="Enter home address" required></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="EmailAdd">Email Address:</label>
+                <input type="text" class="form-control" name="EmailAdd" id="EmailAdd" placeholder="Enter email address" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="MobileNo">Mobile Number:</label>
+                <input type="text" class="form-control" name="MobileNo" id="MobileNo" placeholder="Enter mobile number" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="usertype">User Type:</label>
+                <select class="form-control form-select" id="usertype" name="usertype" required>
+                    <option>ADMINISTRATOR</option>
+                    <option>USER LEVEL 1</option>
+                    <option>USER LEVEL 2</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select class="form-control form-select" id="status" name="status" required>
+                    <option>ACTIVE</option>
+                    <option>INACTIVE 1</option>
+                </select>
+            </div>
+            <!-- ACTION OR COMMAND BUTTONS -->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnSubmit">SUBMIT RECORD</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

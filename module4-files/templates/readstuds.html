@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+    <meta name="viewport" content="width=device-widthm initial scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <h2>Student List</h2>
+
+    <p>
+        <a href="{{ url_for('.create_stud_view') }}">
+            <button class="btn btn-secondary pull-right">Add New Student</button>
+        </a>
+    </p>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flashes">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+
+    {% block content %}
+    <table id="data" class="table table-striped responsive">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Home Address</th>
+                <th>Email Address</th>
+                <th>Age</th>
+                <th>Birthday</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th style="text-align:center" colspan="3">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stud in rows %}
+            <tr>
+                <td>{{ stud['Student_ID'] }}</td>
+                <td>{{ stud['Last_Name'] }}</td>
+                <td>{{ stud['First_Name'] }}</td>
+                <td>{{ stud['Middle_Name'] }}</td>
+                <td>{{ stud['Home_Address'] }}</td>
+                <td>{{ stud['Email_Address'] }}</td>
+                <td>{{ stud['Age'] }}</td>
+                <td>{{ stud['Birthday'] }}</td>
+                <td>{{ stud['Gender'] }}</td>
+                <td>{{ stud['Course'] }}</td>
+
+                <td>
+                    <a href="{{ url_for('.read_one_stud', id = stud['Student_ID']) }}">
+                        <button class="btn btn-secondary">View</button>
+                    </a>
+                </td>
+                <td>
+                    <a href=" {{ url_for('.update_stud_view', id = stud['Student_ID'])  }}">
+                        <button class="btn btn-secondary">Edit</button>
+                    </a>
+                </td>
+                <td>
+                    <a href=" {{ url_for('.delete_stud', id = stud['Student_ID'])  }}">
+                        <button class="btn btn-secondary">Delete</button>
+                    </a>
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        {% endblock %}
+    </div>
+</body>
+</html>

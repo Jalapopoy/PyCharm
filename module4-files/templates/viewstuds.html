@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIEW STUDENT RECORD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <h2>VIEW STUDENT RECORD</h2>
+        <p><a href="{{ url_for('.read_all_stud') }}"><button class="btn btn-secondary">Back to List</button></a></p>
+
+        <table id="data" class="table table-striped responsive">
+            <tr>
+                <td>Student ID:</td>
+                <td>{{ row['Student_ID'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td>{{ row['Last_Name'] }}</td>
+            </tr>
+
+            <tr>
+                <td>First Name:</td>
+                <td>{{ row['First_Name'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Middle Name:</td>
+                <td>{{ row['Middle_Name'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>{{ row['Gender'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Home Address:</td>
+                <td>{{ row['Home_Address'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Email Address:</td>
+                <td>{{ row['Email_Address'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td>{{ row['Age'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Birthday:</td>
+                <td>{{ row['Birthday'] }}</td>
+            </tr>
+
+            <tr>
+                <td>Course:</td>
+                <td>{{ row['Course'] }}</td>
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+</html>
