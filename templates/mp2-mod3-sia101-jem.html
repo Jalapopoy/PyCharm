@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PYTHON ORDERING SYSTEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <form action="#" method="POST" name="frmOrder" id=" frmOrder ">
+        <h2>CUSTOMER ORDER FORM</h2>
+            <br>
+
+            <!-- TEXT INPUT ELEMENTS -->
+            <div class="form-group">
+                <label for="StudentID">Student ID:</label>
+                <input type="text" class="form-control"  name="StudentID" id="StudentID" placeholder="Enter Student ID" required>
+            </div>
+
+             <br>
+             <div class="form-group">
+                <label for="LastName">Last Name:</label>
+                <input type="text" class="form-control"  name="LastName" id="LastName" placeholder="Enter Last Name" required>
+            </div>
+            <br>
+             <div class="form-group">
+                <label for="FirstName">First Name:</label>
+                <input type="text" class="form-control"  name="FirstName" id="FirstName" placeholder="Enter First Name" required>
+            </div>
+            <br>
+             <div class="form-group">
+                <label for="MiddleName">Middle Name:</label>
+                <input type="text" class="form-control"  name="MiddleName" id="MiddleName" placeholder="Enter Middle Name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Gender">Select Gender:</label>
+                <select class="form-control form-select" id="Gender" name="Gender" required>
+                    <option>SELECT ONE</option>
+                    <option>MALE</option>
+                    <option>FEMALE</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" class="form-control"  name="Email" id="Email" placeholder="Enter Email" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Course">Select Course:</label>
+                <select class="form-control form-select" id="Course" name="Course" required>
+                    <option>SELECT ONE</option>
+                    <option>BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</option>
+                    <option>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</option>
+                    <option>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</option>
+                </select>
+            </div>
+            <!-- RADIOBUTTONS FOR TUITION FEES-->
+            <br>
+            <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Year:</legend>
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="tuition" id="FirstYear" value="1st Year 500.00" checked>
+                      <label class="form-check-label" for="tuition">1st Year 500.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="tuition" id="SecondYear" value="2nd Year 600.00">
+                      <label class="form-check-label" for="tuition">2nd Year 600.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="tuition" id="ThirdYear" value="3rd Year 800.00">
+                      <label class="form-check-label" for="tuition">3rd Year 800.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="tuition" id="FourthYear" value="4th Year 900.00">
+                      <label class="form-check-label" for="tuition">4th Year 900.00</label>
+                    </div>
+                 </fieldset>
+            </div>
+            <!-- CHECKOBOXES FOR EXTRAS-->
+            <br>
+            <div class="form-group">
+                 <fieldset class="form-group">
+                    <legend>Select Extras:</legend>
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="rfee" id="rfee" value="Registration Fee 100.00" checked>
+                      <label class="form-check-label" for="rfee">Registration Fee 100.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="ifee" id="ifee" value="Internet Fee 100.00">
+                      <label class="form-check-label" for="ifee">Internet Fee 100.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="idfee" id="idfee" value="ID Fee 100.00">
+                      <label class="form-check-label" for="idfee">ID Fee 100.00</label>
+                    </div>
+
+                     <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="lfee" id="lfee" value="Library Fee 50.00">
+                      <label class="form-check-label" for="lfee">Library Fee 50.00</label>
+                    </div>
+                 </fieldset>
+            </div>
+            <!-- SELECT OR DROPDWOWN FOR SCHOLARSHIP -->
+            <br>
+            <div class="form-group">
+                <label for="scholarship">Select Scholarship:</label>
+                <select class="form-control form-select" id="scholarship" name="scholarship" required>
+                    <option>SELECT ONE</option>
+                    <option>DEAN'S LISTER 200.00</option>
+                    <option>STUDENT ASSISTANT 500.00</option>
+                    <option>PRESIDENT LIST 700.00</option>
+                    <option>FULL SCHOLARSHIP 1000.00</option>
+                </select>
+            </div>
+            <!--ACTION/COMMAND BUTTONS-->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnCompute">COMPUTE TOTAL AMOUNT</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+</html>
