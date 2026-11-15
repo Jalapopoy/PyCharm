@@ -4,10 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06330e00-2483-4677-a9c7-c040473b98c7" name="Changes" comment="Made some changes">
+    <list default="true" id="4482ec24-5740-4153-ba27-0cad8f5918e0" name="Changes" comment="All projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2-mod3-sia101-jem.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp2-mod3-sia101-jem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mp2-mod3-sia101-jem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mp2-mod3-sia101-jem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/act1-mod3-sia101-jem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/act2-mod3-sia101-jem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/act3-mod3-sia101-jem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/templates/addstuds.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/addstuds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/templates/addusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/addusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/templates/editemps.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/editemps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/templates/editstuds.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/editstuds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/templates/viewstuds.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/viewstuds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module4-files/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module5-files/user_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/module5-files/user_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp1-mod3-sia101-jem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp2-mod3-sia101-jem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/act1-mod3-sia101-jem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/act2-mod3-sia101-jem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/act3-mod3-sia101-jem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mp1-mod3-sia101-jem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mp2-mod3-sia101-jem.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +85,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -34,7 +96,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Jalapopoy/PyCharm&quot;,
-    &quot;accountId&quot;: &quot;8d907894-97b5-47e2-ae84-bd7e354736bd&quot;
+    &quot;accountId&quot;: &quot;bae25bf9-9d6d-4543-a531-a54d5465b2dd&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -63,31 +125,39 @@
     "Python.act1-mod3-sia101-jem.executor": "Run",
     "Python.act2-mod3-sia101-jem.executor": "Run",
     "Python.act3-mod3-sia101-jem.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.employee.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.mp1-mod3-sia101-jem.executor": "Run",
     "Python.mp2-mod3-sia101-jem.executor": "Run",
+    "Python.student.executor": "Run",
+    "Python.user.executor": "Debug",
+    "Python.user_api.executor": "Run",
+    "Python.utils.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\SCHOOL FOLDERS\SIA101-BSIT-III-JUSTICE-JEM\module3-files" />
       <recent name="D:\SIA101-BSIT3-JUSTICE-JEM\module3-files" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06330e00-2483-4677-a9c7-c040473b98c7" name="Changes" comment="" />
+      <changelist id="4482ec24-5740-4153-ba27-0cad8f5918e0" name="Changes" comment="All projects" />
       <created>1789360234324</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

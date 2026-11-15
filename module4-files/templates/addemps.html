@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Employee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=" {{ url_for('static', filename='css/bootstrap.min.css') }} " rel="stylesheet">
+</head>
+<body>
+    <div class="card-body">
+        <form action="/create_emp" method="POST" name="frmEmp" id="frmEmp">
+            <h2>Add New Employee</h2>
+            <br>
+
+            <!--TEXT INPUT ELEMENTS-->
+            <div class="form-group">
+                <label for="EmpID">Employee ID:</label>
+                <input type="text" class="form-control" name="EmpID" id="EmpID" placeholder="Enter Employee ID" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="LastName">Last Name:</label>
+                <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Enter last name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="FirstName">First Name:</label>
+                <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="Enter first name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="MiddleName">Middle Name:</label>
+                <input type="text" class="form-control" name="MiddleName" id="MiddleName" placeholder="Enter middle name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Address">Home Address:</label>
+                <textarea class="form-control" name="Address" id="Address" placeholder="Enter home address" required></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="EmailAdd">Email Address:</label>
+                <input type="text" class="form-control" name="EmailAdd" id="EmailAdd" placeholder="Enter email address" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="number" class="form-control" name="Age" id="Age" placeholder="Enter age" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="DateHired">Date Hired:</label>
+                <input type="date" class="form-control" name="DateHired" id="DateHired" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select class="form-control form-select" id="Gender" name="Gender" required>
+                    <option>MALE</option>
+                    <option>FEMALE</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Department">Department:</label>
+                <select class="form-control form-select" id="Department" name="Department" required>
+                    <option>HR</option>
+                    <option>IT</option>
+                    <option>Finance</option>
+                    <option>Marketing</option>
+                </select>
+            </div>
+            <!-- ACTION OR COMMAND BUTTONS -->
+            <br>
+            <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary mb-2" id="btnSubmit">SUBMIT RECORD</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
