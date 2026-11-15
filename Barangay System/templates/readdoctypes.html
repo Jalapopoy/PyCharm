@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Documents{% endblock %}
+{% block content %}
+<h2>Available Documents</h2>
+<br>
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+                <th>Document ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Fee (PHP)</th>
+                <th>Processing Days</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in rows %}
+        <tr>
+                <td>{{ row['DocTypeID'] }}</td>
+                <td>{{ row['Name'] }}</td>
+                <td>{{ row['Description'] }}</td>
+                <td>{{ '%.2f'|format(row['Fee']) }}</td>
+                <td>{{ row['ProcessingDays'] }}</td>
+            <td><a class="btn btn-sm btn-info" href="{{ url_for('read_one_doctype', id=row['DocTypeID']) }}">View</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% if not rows %}<p class="text-muted">No documents available.</p>{% endif %}
+{% endblock %}

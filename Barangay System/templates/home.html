@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Hello, {{ name }}!</h1>
+    <p class="lead">Welcome to the Barangay Document Request System. Request barangay documents and
+        check their status without lining up at the barangay hall.</p>
+    <p>You have <strong>{{ pending }}</strong> pending request{{ '' if pending == 1 else 's' }}.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('create_request_view') }}">+ New Request</a>
+</div>
+
+<div class="row">
+    <div class="col-md-3 mb-3">
+        <div class="card"><div class="card-body">
+            <h5 class="card-title">Documents</h5>
+            <p class="card-text">See the documents you can request, with fees and processing days.</p>
+            <a href="{{ url_for('read_all_doctype') }}" class="btn btn-secondary btn-sm">View</a>
+        </div></div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card"><div class="card-body">
+            <h5 class="card-title">Household</h5>
+            <p class="card-text">View the residents in your household.</p>
+            <a href="{{ url_for('read_all_resident') }}" class="btn btn-secondary btn-sm">View</a>
+        </div></div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card"><div class="card-body">
+            <h5 class="card-title">My Payments</h5>
+            <p class="card-text">Check the payments for your requests.</p>
+            <a href="{{ url_for('read_all_payment') }}" class="btn btn-secondary btn-sm">View</a>
+        </div></div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card"><div class="card-body">
+            <h5 class="card-title">My Requests</h5>
+            <p class="card-text">Create, edit, or cancel your document requests.</p>
+            <a href="{{ url_for('read_all_request') }}" class="btn btn-secondary btn-sm">Manage</a>
+        </div></div>
+    </div>
+</div>
+{% endblock %}

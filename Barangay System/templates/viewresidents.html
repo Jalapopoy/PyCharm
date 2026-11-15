@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Resident Details{% endblock %}
+{% block content %}
+<h2>Resident Details</h2>
+<br>
+<dl class="row">
+    <dt class="col-sm-3">Resident ID</dt>
+    <dd class="col-sm-9">{{ row['ResidentID'] }}&nbsp;</dd>
+    <dt class="col-sm-3">Household ID</dt>
+    <dd class="col-sm-9">{{ row['HouseholdID'] }}&nbsp;</dd>
+    <dt class="col-sm-3">Last Name</dt>
+    <dd class="col-sm-9">{{ row['LastName'] }}&nbsp;</dd>
+    <dt class="col-sm-3">First Name</dt>
+    <dd class="col-sm-9">{{ row['FirstName'] }}&nbsp;</dd>
+    <dt class="col-sm-3">Middle Name</dt>
+    <dd class="col-sm-9">{{ row['MiddleName'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Birthdate</dt>
+    <dd class="col-sm-9">{{ row['Birthdate'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Sex</dt>
+    <dd class="col-sm-9">{{ row['Sex'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Civil Status</dt>
+    <dd class="col-sm-9">{{ row['CivilStatus'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Contact No.</dt>
+    <dd class="col-sm-9">{{ row['ContactNo'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9">{{ row['Email'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Occupation</dt>
+    <dd class="col-sm-9">{{ row['Occupation'] or '' }}&nbsp;</dd>
+</dl>
+<a class="btn btn-secondary" href="{{ url_for('read_all_resident') }}">Back to List</a>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}{{ 'New Request' if mode == 'create' else 'Edit Request' }}{% endblock %}
+{% block content %}
+<h2>{{ 'New Request' if mode == 'create' else 'Edit Request' }}</h2>
+<br>
+<form action="{{ '/create_request' if mode == 'create' else '/update_request' }}" method="POST" name="frmRequest" id="frmRequest">
+    {% if mode == 'edit' %}
+    <div class="form-group">
+        <label for="RequestID">Request ID</label>
+        <input type="text" class="form-control" name="RequestID" id="RequestID" value="{{ row['RequestID'] }}" readonly>
+    </div>
+    {% endif %}
+
+    <div class="form-group">
+        <label for="DocTypeID">Document</label>
+        <select class="form-control" name="DocTypeID" id="DocTypeID" required>
+            <option value="">-- Select Document --</option>
+            {% for d in doctypes %}
+            <option value="{{ d['DocTypeID'] }}" {% if row and row['DocTypeID'] == d['DocTypeID'] %}selected{% endif %}>
+                {{ d['Name'] }} (PHP {{ '%.2f'|format(d['Fee']) }})
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Purpose">Purpose</label>
+        <input type="text" class="form-control" name="Purpose" id="Purpose" list="purposeList"
+               placeholder="Enter the purpose" value="{{ row['Purpose'] if row else '' }}" maxlength="255" required>
+        <datalist id="purposeList">
+            <option value="Employment">
+            <option value="Scholarship">
+            <option value="School Requirement">
+            <option value="Business">
+            <option value="Bank Account Opening">
+            <option value="Travel">
+        </datalist>
+    </div>
+
+    <div class="form-group">
+        <label for="Remarks">Remarks (optional)</label>
+        <input type="text" class="form-control" name="Remarks" id="Remarks" maxlength="255"
+               value="{{ (row['Remarks'] or '') if row else '' }}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">{{ 'Submit Request' if mode == 'create' else 'Save Changes' }}</button>
+    <a class="btn btn-secondary" href="{{ url_for('read_all_request') }}">Back to List</a>
+</form>
+{% endblock %}
