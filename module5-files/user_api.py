@@ -6,175 +6,175 @@ from flask import flash, request
 
 # CREATE USER API
 @app.route('/create-user', methods=['POST'])
-def add_user():
-    conn = None
-    cursor = None
+def add_userJEM():
+    connJEM = None
+    cursorJEM = None
     try:
         # GET JSON DATA
-        _json = request.json
-        _User_ID = _json['User_ID']
-        _Last_Name = _json['Last_Name']
-        _First_Name = _json['First_Name']
-        _Middle_Name = _json['Middle_Name']
-        _Home_Address = _json['Home_Address']
-        _Email_Address = _json['Email_Address']
-        _Mobile_Number = _json['Mobile_Number']
-        _User_Type_ID = _json['User_Type_ID']
-        _Status = _json['Status']
-        _Password = _json['Password']
+        _jsonJEM = request.json
+        _User_IDJEM = _jsonJEM['User_ID']
+        _Last_NameJEM = _jsonJEM['Last_Name']
+        _First_NameJEM = _jsonJEM['First_Name']
+        _Middle_NameJEM = _jsonJEM['Middle_Name']
+        _Home_AddressJEM = _jsonJEM['Home_Address']
+        _Email_AddressJEM = _jsonJEM['Email_Address']
+        _Mobile_NumberJEM = _jsonJEM['Mobile_Number']
+        _User_Type_IDJEM = _jsonJEM['User_Type_ID']
+        _StatusJEM = _jsonJEM['Status']
+        _PasswordJEM = _jsonJEM['Password']
 
         # CHECK IF EMPTY
-        if (_User_ID and _Last_Name and _First_Name and _Middle_Name and _Home_Address
-                and _Email_Address and _Mobile_Number and _User_Type_ID and _Status and _Password
+        if (_User_IDJEM and _Last_NameJEM and _First_NameJEM and _Middle_NameJEM and _Home_AddressJEM
+                and _Email_AddressJEM and _Mobile_NumberJEM and _User_Type_IDJEM and _StatusJEM and _PasswordJEM
                 and request.method == 'POST'):
 
             # SAVE RECORD
-            sql = "INSERT INTO tbl_user_info(User_ID, Last_Name, First_Name, Middle_Name, Home_Address, Email_Address, Mobile_Number, User_Type_ID, Status, Password) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-            data = (_User_ID, _Last_Name, _First_Name, _Middle_Name, _Home_Address, _Email_Address, _Mobile_Number,
-                    _User_Type_ID, _Status, _Password)
+            sqlJEM = "INSERT INTO tbl_user_info(User_ID, Last_Name, First_Name, Middle_Name, Home_Address, Email_Address, Mobile_Number, User_Type_ID, Status, Password) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            dataJEM = (_User_IDJEM, _Last_NameJEM, _First_NameJEM, _Middle_NameJEM, _Home_AddressJEM, _Email_AddressJEM,
+                       _Mobile_NumberJEM, _User_Type_IDJEM, _StatusJEM, _PasswordJEM)
 
-            conn = mysql.connect()
-            cursor = conn.cursor()
-            cursor.execute(sql, data)
-            conn.commit()
+            connJEM = mysql.connect()
+            cursorJEM = connJEM.cursor()
+            cursorJEM.execute(sqlJEM, dataJEM)
+            connJEM.commit()
 
-            resp = jsonify('Record added successfully!')
-            resp.status_code = 200
-            return resp
+            respJEM = jsonify('Record added successfully!')
+            respJEM.status_code = 200
+            return respJEM
         else:
-            return not_found()
+            return not_foundJEM()
 
-    except Exception as e:
-        print(e)
+    except Exception as eJEM:
+        print(eJEM)
 
     finally:
-        cursor.close()
-        conn.close()
+        cursorJEM.close()
+        connJEM.close()
 
 
 @app.errorhandler(404)
-def not_found(error=None):
-    message = {
+def not_foundJEM(errorJEM=None):
+    messageJEM = {
         'status': 404,
         'message': 'Not Found: ' + request.url,
     }
-    resp = jsonify(message)
-    resp.status_code = 404
-    return resp
+    respJEM = jsonify(messageJEM)
+    respJEM.status_code = 404
+    return respJEM
 
 #DELETE USER
-@app.route('/delete-user/<id>', methods=['DELETE'])
-def delete_user(id):
-    conn = None
-    cursor = None
+@app.route('/delete-user/<idJEM>', methods=['DELETE'])
+def delete_userJEM(idJEM):
+    connJEM = None
+    cursorJEM = None
     try:
-        conn = mysql.connect()
-        cursor = conn.cursor()
-        cursor.execute("DELETE FROM tbl_user_info WHERE User_ID=%s", (id,))
-        conn.commit()
-        resp = jsonify('Record deleted successfully!')
-        resp.status_code = 200
-        return resp
-    except Exception as e:
-        print(e)
+        connJEM = mysql.connect()
+        cursorJEM = connJEM.cursor()
+        cursorJEM.execute("DELETE FROM tbl_user_info WHERE User_ID=%s", (idJEM,))
+        connJEM.commit()
+        respJEM = jsonify('Record deleted successfully!')
+        respJEM.status_code = 200
+        return respJEM
+    except Exception as eJEM:
+        print(eJEM)
     finally:
-        cursor.close()
-        conn.close()
+        cursorJEM.close()
+        connJEM.close()
 
 
 # UPDATE USER
 @app.route('/update-user', methods=['PUT'])
-def update_user():
-    conn = None
-    cursor = None
+def update_userJEM():
+    connJEM = None
+    cursorJEM = None
     try:
-        _json = request.json
-        _User_ID = _json['User_ID']
-        _Last_Name = _json['Last_Name']
-        _First_Name = _json['First_Name']
-        _Middle_Name = _json['Middle_Name']
-        _Home_Address = _json['Home_Address']
-        _Email_Address = _json['Email_Address']
-        _Mobile_Number = _json['Mobile_Number']
-        _User_Type_ID = _json['User_Type_ID']
-        _Status = _json['Status']
+        _jsonJEM = request.json
+        _User_IDJEM = _jsonJEM['User_ID']
+        _Last_NameJEM = _jsonJEM['Last_Name']
+        _First_NameJEM = _jsonJEM['First_Name']
+        _Middle_NameJEM = _jsonJEM['Middle_Name']
+        _Home_AddressJEM = _jsonJEM['Home_Address']
+        _Email_AddressJEM = _jsonJEM['Email_Address']
+        _Mobile_NumberJEM = _jsonJEM['Mobile_Number']
+        _User_Type_IDJEM = _jsonJEM['User_Type_ID']
+        _StatusJEM = _jsonJEM['Status']
 
-        if (_User_ID and _Last_Name and _First_Name and _Middle_Name and _Home_Address
-                and _Email_Address and _Mobile_Number and _User_Type_ID and _Status and request.method == 'PUT'):
+        if (_User_IDJEM and _Last_NameJEM and _First_NameJEM and _Middle_NameJEM and _Home_AddressJEM
+                and _Email_AddressJEM and _Mobile_NumberJEM and _User_Type_IDJEM and _StatusJEM and request.method == 'PUT'):
 
             # save edits
-            sql = "UPDATE tbl_user_info SET Last_Name=%s, First_Name=%s, Middle_Name=%s, Home_Address=%s, Email_Address=%s, Mobile_Number=%s, User_Type_ID=%s, Status=%s WHERE User_ID=%s"
-            data = (_Last_Name, _First_Name, _Middle_Name, _Home_Address, _Email_Address, _Mobile_Number, _User_Type_ID,
-                    _Status, _User_ID)
+            sqlJEM = "UPDATE tbl_user_info SET Last_Name=%s, First_Name=%s, Middle_Name=%s, Home_Address=%s, Email_Address=%s, Mobile_Number=%s, User_Type_ID=%s, Status=%s WHERE User_ID=%s"
+            dataJEM = (_Last_NameJEM, _First_NameJEM, _Middle_NameJEM, _Home_AddressJEM, _Email_AddressJEM,
+                       _Mobile_NumberJEM, _User_Type_IDJEM, _StatusJEM, _User_IDJEM)
 
-            conn = mysql.connect()
-            cursor = conn.cursor()
-            cursor.execute(sql, data)
-            conn.commit()
+            connJEM = mysql.connect()
+            cursorJEM = connJEM.cursor()
+            cursorJEM.execute(sqlJEM, dataJEM)
+            connJEM.commit()
 
-            resp = jsonify('Record updated successfully!')
-            resp.status_code = 200
-            return resp
+            respJEM = jsonify('Record updated successfully!')
+            respJEM.status_code = 200
+            return respJEM
 
         else:
-            return not_found()
+            return not_foundJEM()
 
-    except Exception as e:
-        print(e)
+    except Exception as eJEM:
+        print(eJEM)
 
     finally:
-        cursor.close()
-        conn.close()
+        cursorJEM.close()
+        connJEM.close()
 
 #READ ONE USER
-@app.route('/read-one-user/<id>')
-def user(id):
-    conn = None
-    cursor = None
+@app.route('/read-one-user/<idJEM>')
+def userJEM(idJEM):
+    connJEM = None
+    cursorJEM = None
     try:
-        conn = mysql.connect()
-        cursor = conn.cursor(pymysql.cursors.DictCursor)
-        cursor.execute("SELECT User_ID, Last_Name, First_Name, "
-                       "Middle_Name, Home_Address, "
-                       "Email_Address, Mobile_Number, uinfo.User_Type_ID, User_Type_Name, Status, "
-                       "Password "
-                       "FROM tbl_user_info uinfo "
-                       "JOIN tbl_user_type utype "
-                       "ON uinfo.User_Type_ID = utype.User_Type_ID WHERE User_ID=%s", id)
-        row = cursor.fetchone()
-        resp = jsonify(row)
-        resp.status_code = 200
-        return resp
-    except Exception as e:
-        print(e)
+        connJEM = mysql.connect()
+        cursorJEM = connJEM.cursor(pymysql.cursors.DictCursor)
+        cursorJEM.execute("SELECT User_ID, Last_Name, First_Name, "
+                          "Middle_Name, Home_Address, "
+                          "Email_Address, Mobile_Number, uinfo.User_Type_ID, User_Type_Name, Status, "
+                          "Password "
+                          "FROM tbl_user_info uinfo "
+                          "JOIN tbl_user_type utype "
+                          "ON uinfo.User_Type_ID = utype.User_Type_ID WHERE User_ID=%s", idJEM)
+        rowJEM = cursorJEM.fetchone()
+        respJEM = jsonify(rowJEM)
+        respJEM.status_code = 200
+        return respJEM
+    except Exception as eJEM:
+        print(eJEM)
     finally:
-        cursor.close()
-        conn.close()
+        cursorJEM.close()
+        connJEM.close()
 
 #READ ALL USER
 @app.route('/read-all-user')
-def users():
-    conn = None
-    cursor = None
+def usersJEM():
+    connJEM = None
+    cursorJEM = None
     try:
-        conn = mysql.connect()
-        cursor = conn.cursor(pymysql.cursors.DictCursor)
-        cursor.execute("SELECT User_ID, Last_Name, First_Name, "
-                       "Middle_Name, Home_Address, "
-                       "Email_Address, Mobile_Number, uinfo.User_Type_ID, User_Type_Name, Status, "
-                       "Password "
-                       "FROM tbl_user_info uinfo "
-                       "JOIN tbl_user_type utype "
-                       "ON uinfo.User_Type_ID = utype.User_Type_ID")
-        rows = cursor.fetchall()
-        resp = jsonify(rows)
-        resp.status_code = 200
-        return resp
-    except Exception as e:
-        print(e)
+        connJEM = mysql.connect()
+        cursorJEM = connJEM.cursor(pymysql.cursors.DictCursor)
+        cursorJEM.execute("SELECT User_ID, Last_Name, First_Name, "
+                          "Middle_Name, Home_Address, "
+                          "Email_Address, Mobile_Number, uinfo.User_Type_ID, User_Type_Name, Status, "
+                          "Password "
+                          "FROM tbl_user_info uinfo "
+                          "JOIN tbl_user_type utype "
+                          "ON uinfo.User_Type_ID = utype.User_Type_ID")
+        rowsJEM = cursorJEM.fetchall()
+        respJEM = jsonify(rowsJEM)
+        respJEM.status_code = 200
+        return respJEM
+    except Exception as eJEM:
+        print(eJEM)
     finally:
-        cursor.close()
-        conn.close()
+        cursorJEM.close()
+        connJEM.close()
 
 
 if __name__ == "__main__":

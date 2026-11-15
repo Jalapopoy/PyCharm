@@ -1,5 +1,3 @@
-from csv import excel_tab
-
 import pymysql
 from app import app
 from db_config import mysql
