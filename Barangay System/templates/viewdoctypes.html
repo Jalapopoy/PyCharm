@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Document Details{% endblock %}
+{% block content %}
+<h2>Document Details</h2>
+<br>
+<dl class="row">
+    <dt class="col-sm-3">Document ID</dt>
+    <dd class="col-sm-9">{{ row['DocTypeID'] }}&nbsp;</dd>
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">{{ row['Name'] }}&nbsp;</dd>
+    <dt class="col-sm-3">Description</dt>
+    <dd class="col-sm-9">{{ row['Description'] }}&nbsp;</dd>
+    <dt class="col-sm-3">Fee (PHP)</dt>
+    <dd class="col-sm-9">{{ '%.2f'|format(row['Fee']) }}&nbsp;</dd>
+    <dt class="col-sm-3">Processing Days</dt>
+    <dd class="col-sm-9">{{ row['ProcessingDays'] }}&nbsp;</dd>
+</dl>
+<a class="btn btn-secondary" href="{{ url_for('read_all_doctype') }}">Back to List</a>
+{% endblock %}

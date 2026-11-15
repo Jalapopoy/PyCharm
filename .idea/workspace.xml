@@ -4,72 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4482ec24-5740-4153-ba27-0cad8f5918e0" name="Changes" comment="All projects">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/act1-mod3-sia101-jem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/act2-mod3-sia101-jem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/act3-mod3-sia101-jem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/student.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/templates/addstuds.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/addstuds.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/templates/addusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/addusers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/templates/editemps.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/editemps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/templates/editstuds.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/editstuds.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/templates/viewstuds.html" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/templates/viewstuds.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4-files/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4-files/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5-files/user_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/module5-files/user_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp1-mod3-sia101-jem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2-mod3-sia101-jem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/act1-mod3-sia101-jem.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/act2-mod3-sia101-jem.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/act3-mod3-sia101-jem.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mp1-mod3-sia101-jem.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mp2-mod3-sia101-jem.html" beforeDir="false" />
-    </list>
+    <list default="true" id="4482ec24-5740-4153-ba27-0cad8f5918e0" name="Changes" comment="New Folder &quot;Barangay System&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,30 +53,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.act1-mod3-sia101-jem.executor": "Run",
-    "Python.act2-mod3-sia101-jem.executor": "Run",
-    "Python.act3-mod3-sia101-jem.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.employee.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mp1-mod3-sia101-jem.executor": "Run",
-    "Python.mp2-mod3-sia101-jem.executor": "Run",
-    "Python.student.executor": "Run",
-    "Python.user.executor": "Debug",
-    "Python.user_api.executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.act1-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.act2-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.act3-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.employee.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mp1-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mp2-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.student.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.user_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\SCHOOL FOLDERS\SIA101-BSIT-III-JUSTICE-JEM\module3-files" />
@@ -235,11 +170,20 @@
       <option name="project" value="LOCAL" />
       <updated>1789373779198</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="New Folder &quot;Barangay System&quot;">
+      <option name="closed" value="true" />
+      <created>1794729646813</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1794729646813</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made some changes" />
+    <MESSAGE value="New Folder &quot;Barangay System&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Folder &quot;Barangay System&quot;" />
   </component>
 </project>

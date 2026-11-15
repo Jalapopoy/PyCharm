@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Request Details{% endblock %}
+{% block content %}
+<h2>Request Details</h2>
+<br>
+<dl class="row">
+    <dt class="col-sm-3">Request ID</dt><dd class="col-sm-9">{{ row['RequestID'] }}</dd>
+    <dt class="col-sm-3">Document</dt><dd class="col-sm-9">{{ row['DocName'] or row['DocTypeID'] }}</dd>
+    <dt class="col-sm-3">Fee (PHP)</dt><dd class="col-sm-9">{{ '%.2f'|format(row['DocFee']) if row['DocFee'] is not none else '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Purpose</dt><dd class="col-sm-9">{{ row['Purpose'] }}</dd>
+    <dt class="col-sm-3">Date Requested</dt><dd class="col-sm-9">{{ row['DateRequested'] }}</dd>
+    <dt class="col-sm-3">Status</dt><dd class="col-sm-9">{{ row['Status'] }}</dd>
+    <dt class="col-sm-3">Date Released</dt><dd class="col-sm-9">{{ row['DateReleased'] or '' }}&nbsp;</dd>
+    <dt class="col-sm-3">Remarks</dt><dd class="col-sm-9">{{ row['Remarks'] or '' }}&nbsp;</dd>
+</dl>
+{% if row['Status'] == 'Pending' %}
+<a class="btn btn-primary" href="{{ url_for('update_request_view', id=row['RequestID']) }}">Edit</a>
+<a class="btn btn-danger" href="{{ url_for('delete_request_view', id=row['RequestID']) }}">Cancel Request</a>
+{% endif %}
+<a class="btn btn-secondary" href="{{ url_for('read_all_request') }}">Back to List</a>
+{% endblock %}
