@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4482ec24-5740-4153-ba27-0cad8f5918e0" name="Changes" comment="New Folder &quot;Barangay System&quot;" />
+    <list default="true" id="4482ec24-5740-4153-ba27-0cad8f5918e0" name="Changes" comment="New Folder &quot;Barangay System&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/request_txn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/request_txn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/readdoctypes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/readdoctypes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/readpayments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/readpayments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/readrequests.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/readrequests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/readresidents.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/readresidents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/templates/requestform.html" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/templates/requestform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Barangay System/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Barangay System/user.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +80,7 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.mp1-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
     &quot;Python.mp2-mod3-sia101-jem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.payment.executor&quot;: &quot;Run&quot;,
     &quot;Python.student.executor&quot;: &quot;Run&quot;,
     &quot;Python.user.executor&quot;: &quot;Debug&quot;,
     &quot;Python.user_api.executor&quot;: &quot;Run&quot;,
@@ -74,14 +90,47 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Documents/SCHOOL FOLDERS/SIA101-BSIT-III-JUSTICE-JEM/Barangay System/static&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\SCHOOL FOLDERS\SIA101-BSIT-III-JUSTICE-JEM\Barangay System\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\SCHOOL FOLDERS\SIA101-BSIT-III-JUSTICE-JEM\module3-files" />
       <recent name="D:\SIA101-BSIT3-JUSTICE-JEM\module3-files" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyCharm Projects" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Barangay System" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Barangay System/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -178,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794729646813</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="New Folder &quot;Barangay System&quot;">
+      <option name="closed" value="true" />
+      <created>1794729970201</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1794729970201</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

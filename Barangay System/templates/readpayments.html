@@ -3,8 +3,9 @@
 {% block content %}
 <h2>My Payments</h2>
 <br>
+<div class="table-responsive">
 <table class="table table-striped table-hover">
-    <thead class="thead-dark">
+    <thead class="table-dark">
         <tr>
                 <th>Payment ID</th>
                 <th>Request ID</th>
@@ -31,5 +32,6 @@
         {% endfor %}
     </tbody>
 </table>
+</div>
 {% if not rows %}<p class="text-muted">No payments found.</p>{% endif %}
 {% endblock %}

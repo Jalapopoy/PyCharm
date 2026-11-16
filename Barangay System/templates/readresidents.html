@@ -3,8 +3,9 @@
 {% block content %}
 <h2>My Household</h2>
 <br>
+<div class="table-responsive">
 <table class="table table-striped table-hover">
-    <thead class="thead-dark">
+    <thead class="table-dark">
         <tr>
                 <th>Resident ID</th>
                 <th>Name</th>
@@ -27,5 +28,6 @@
         {% endfor %}
     </tbody>
 </table>
+</div>
 {% if not rows %}<p class="text-muted">No residents found.</p>{% endif %}
 {% endblock %}

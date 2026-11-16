@@ -5,15 +5,15 @@
 <br>
 <form action="{{ '/create_request' if mode == 'create' else '/update_request' }}" method="POST" name="frmRequest" id="frmRequest">
     {% if mode == 'edit' %}
-    <div class="form-group">
+    <div class="mb-3">
         <label for="RequestID">Request ID</label>
         <input type="text" class="form-control" name="RequestID" id="RequestID" value="{{ row['RequestID'] }}" readonly>
     </div>
     {% endif %}
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="DocTypeID">Document</label>
-        <select class="form-control" name="DocTypeID" id="DocTypeID" required>
+        <select class="form-select" name="DocTypeID" id="DocTypeID" required>
             <option value="">-- Select Document --</option>
             {% for d in doctypes %}
             <option value="{{ d['DocTypeID'] }}" {% if row and row['DocTypeID'] == d['DocTypeID'] %}selected{% endif %}>
@@ -23,7 +23,7 @@
         </select>
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="Purpose">Purpose</label>
         <input type="text" class="form-control" name="Purpose" id="Purpose" list="purposeList"
                placeholder="Enter the purpose" value="{{ row['Purpose'] if row else '' }}" maxlength="255" required>
@@ -37,7 +37,7 @@
         </datalist>
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label for="Remarks">Remarks (optional)</label>
         <input type="text" class="form-control" name="Remarks" id="Remarks" maxlength="255"
                value="{{ (row['Remarks'] or '') if row else '' }}">

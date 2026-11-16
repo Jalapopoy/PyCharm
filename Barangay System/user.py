@@ -17,11 +17,11 @@ def log_in_user():
 
     with db_cursor() as cursor:
         cursor.execute("SELECT * FROM tbluser WHERE Username=%s AND Password=%s "
-                       "AND LOWER(Status)='active'", (strUser, strPass))
+                       "AND LOWER(Status)='active' AND LOWER(Role)='resident'", (strUser, strPass))
         row = cursor.fetchone()
 
     if row is None:
-        flash('Invalid username or password', 'danger')
+        flash('Invalid username or password, or this is not a resident account', 'danger')
         return redirect('/')
 
     # Only resident accounts (linked to a resident record) use this client.

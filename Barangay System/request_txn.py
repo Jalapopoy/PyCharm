@@ -13,8 +13,10 @@ def get_doctypes(cursor):
 @login_required
 def read_all_request():
     with db_cursor() as cursor:
-        cursor.execute("SELECT r.*, d.Name AS DocName FROM tblrequest r "
+        cursor.execute("SELECT r.*, d.Name AS DocName, p.Status AS PayStatus "
+                       "FROM tblrequest r "
                        "LEFT JOIN tbldocumenttype d ON r.DocTypeID = d.DocTypeID "
+                       "LEFT JOIN tblpayment p ON r.RequestID = p.RequestID "
                        "WHERE r.ResidentID=%s ORDER BY r.DateRequested DESC",
                        (session['resident_id'],))
         rows = cursor.fetchall()
@@ -25,9 +27,11 @@ def read_all_request():
 @app.route('/create_request_view')
 @login_required
 def create_request_view():
+    selected = request.args.get('doctype')
+    row = {'DocTypeID': selected, 'Purpose': '', 'Remarks': ''} if selected else None
     with db_cursor() as cursor:
         doctypes = get_doctypes(cursor)
-    return render_template('requestform.html', mode='create', row=None, doctypes=doctypes)
+    return render_template('requestform.html', mode='create', row=row, doctypes=doctypes)
 
 
 # CREATE (save)
@@ -62,8 +66,11 @@ def create_request():
 @login_required
 def read_one_request(id):
     with db_cursor() as cursor:
-        cursor.execute("SELECT r.*, d.Name AS DocName, d.Fee AS DocFee FROM tblrequest r "
+        cursor.execute("SELECT r.*, d.Name AS DocName, d.Fee AS DocFee, "
+                       "p.Status AS PayStatus, p.ORNumber AS ORNumber "
+                       "FROM tblrequest r "
                        "LEFT JOIN tbldocumenttype d ON r.DocTypeID = d.DocTypeID "
+                       "LEFT JOIN tblpayment p ON r.RequestID = p.RequestID "
                        "WHERE r.RequestID=%s AND r.ResidentID=%s", (id, session['resident_id']))
         row = cursor.fetchone()
     if row is None:
